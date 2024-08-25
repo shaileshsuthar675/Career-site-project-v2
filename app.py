@@ -1,29 +1,21 @@
+import os
 from flask import Flask, render_template, jsonify
+
+from database import all_career_from_db
+from models import db
+from dotenv_vault import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
-jobs = [
-    {
-        "Job Title": "Data Analyst",
-        "Location": "Pune",
-        "Salary": "$100,000",
-    },
-    {
-        "Job Title": "Data Scientist",
-        "Location": "Gurgaon",
-        "Salary": "$120,000",
-    },
-    {
-        "Job Title": "Data Analyst",
-        "Location": "Bengalore",
-        "Salary": "$90,000",
-    },
-    {
-        "Job Title": "Software Development Engineer",
-        "Location": "Mumbai",
-        "Salary": "$950,000",
-    },
-]
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("SERVER")
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db.init_app(app=app)
+
+
+jobs = all_career_from_db(app=app)
+print(type(jobs[0]))
 
 
 @app.route("/")
