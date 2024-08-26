@@ -3,9 +3,7 @@ from flask import Flask, render_template, jsonify
 
 from database import all_career_from_db
 from models import db
-from dotenv_vault import load_dotenv
 
-load_dotenv()
 
 app = Flask(__name__)
 
