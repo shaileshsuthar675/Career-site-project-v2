@@ -9,7 +9,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("SERVER")
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///career.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app=app)
