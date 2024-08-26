@@ -13,7 +13,6 @@ db.init_app(app=app)
 
 
 jobs = all_career_from_db(app=app)
-print(type(jobs[0]))
 
 
 @app.route("/")
