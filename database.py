@@ -30,10 +30,5 @@ def all_career_from_db(app):
     return careers
 
 
-# all_career_from_db()
-# with app.app_context():
-#     career_dict = career(title="Data Analyst", location="Bengalore", salary="$90,000")
-#     db.session.add(career_dict)
-#     db.session.commit()
-#     all_career = career.query.all()
-#     print(all_career)
+def load_job_from_db(app, id):
+    pass

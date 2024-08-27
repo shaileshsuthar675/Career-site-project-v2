@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jovian Careers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <div class="container">
+        {% include 'nav.html' %}
+
+        <h1 class="text-center mt-2 mb-4">
+            Jovian Careers
+        </h1>
+
+        <h3 class="mb-2">{{job['Job Title']}}</h3>
+        <p class="lead mt-0">{{job.Location}}</p>
+
+        <h4>Responsibilites</h4>
+        <ul>
+            {% for line in job.responsibilites.split('\n') %}
+            <li>{{line}}</li>
+            {% endfor %}
+        </ul>
+
+        <h4>Requirements</h4>
+        <ol>
+            {% for line in job.requirements.split('\n') %}
+            <li>{{line}}</li>
+            {% endfor %}
+        </ol>
+
+        <h4>Salary</h4>
+        <p>{{job.currency}}{{job.Salary}}</p>
+
+        {% include 'footer.html' %}
+
+    </div>
+
+
+
+</body>
+
+</html>
