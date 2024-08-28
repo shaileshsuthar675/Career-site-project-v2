@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1411"/><column_width id="4" width="0"/></tab_structure><tab_browse><table title="." custom_title="0" dock_id="2" table="0,0:"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000011800ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO career (&quot;title&quot;,&quot;location&quot;,&quot;salary&quot;,&quot;currency&quot;,&quot;responsibilites&quot;,&quot;requirements&quot;) 
+VALUES (&quot;Data Analyst&quot;,	&quot;Bengaluru, India&quot;,	&quot;1000000&quot;,	&quot;Rs.&quot;,&quot;Process data using Python, SQL and other tools through the analytics data pipeline
+Identify and translate business rules into specifications and documentation
+Ensure quality control and follow peer review guidelines
+Adhere to best practices and standards, maintaining process efficiencies&quot;, &quot;Bachelor's degree (required) or above in Computer Science, Mathematics, Economics, or experience in related analytical field
+Excellent analytic and creative problem-solving skills
+1-3 years Python and SQL programming experience
+Basic skills in MS Excel
+Knowledge of cloud computing platforms (AWS, GCP) and knowledge of Spark is desired&quot;);
+INSERT INTO career (&quot;title&quot;,&quot;location&quot;,&quot;salary&quot;,&quot;currency&quot;,&quot;responsibilites&quot;,&quot;requirements&quot;) 
+VALUES (&quot;Data Scientist&quot;,	&quot;New Delhi, India&quot;,	&quot;1500000&quot;,	&quot;Rs.&quot;,&quot;Draft detailed scope for assigned projects, addressing suggested methodology and execution framework.
+Execute on the plan with appropriate data mining, analytical and data science techniques.
+Perform quality assurance of data and deliverables for work performed by other Data Scientists, Data Engineers and self.
+Accountable for the quality of the end solution or model by planning the required reviews on code and process.&quot;,&quot;Expert knowledge in Deep Learning techniques and exploring newer approaches like federated learning and transfer learning.
+Proficient in some or all of the following techniques: Linear &amp; Logistic Regression, Decision Trees, Random Forests, K-Nearest Neighbors, Markov Chain, Monte Carlo, Gibbs Sampling, Evolutionary Algorithms, Support Vector Machines.
+Proficient in advanced data mining and statistical modeling techniques, including Predictive modeling&quot;);
+INSERT INTO career (&quot;title&quot;,&quot;location&quot;,&quot;salary&quot;,&quot;currency&quot;,&quot;responsibilites&quot;,&quot;requirements&quot;) 
+VALUES (&quot;Frontend Developer&quot;,	&quot;Remote&quot;,	&quot;1200000&quot;,	&quot;Rs.&quot;,&quot;Translate designs and wireframes into high quality JS, CSS, HTML templates
+Design, build, and maintain high performance, reusable, and reliable UI components and products
+Ensure the best possible performance, quality, and optimize for maximum speed and scalability
+Identify and correct bottlenecks and fix bugs.
+Help maintain code quality, organization, and automatization.&quot;,&quot;Strong knowledge of programming skills in JS, CSS and HTML
+Familiarity with responsive and adaptive web design, and good knowledge of JS libraries such as JQuery
+Strong knowledge of about atleast one of the JS frameworks (e.g. VueJS, Angular JS, NodeJS, ReactJS)
+Experience with building websites, ability to handle cross browser compatibility issues&quot;);
+INSERT INTO career (&quot;title&quot;,&quot;location&quot;,&quot;salary&quot;,&quot;currency&quot;,&quot;responsibilites&quot;,&quot;requirements&quot;) 
+VALUES (&quot;Backend Developer&quot;,	&quot;San Francisco, USA&quot;,	&quot;120000&quot;,	&quot;$&quot;,&quot;Design and develop a cloud based backend
+Participate and produce a scalable cloud based backend system
+Design and develop REST based APIs
+Interact with customer directly and with other stakeholders in the organization&quot;,&quot;Hands on experience with building a web backend in Java or Golang
+Knowledge of designing and building REST APIs
+Proven experience in building a scalable and resilient backend
+Good understanding of database schemas and using both relational (SQL) and noSQL based data stores
+Strong analytical and debugging skills&quot;);
+
+SELECT * FROM career;</sql><current_tab id="0"/></tab_sql></sqlb_project>
