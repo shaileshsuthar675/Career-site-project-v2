@@ -35,7 +35,17 @@ def show_job(id):
 @app.route("/job/<id>/apply", methods=["post"])
 def apply_to_the_job(id):
     form_info = request.form
-    return render_template("application_submitted.html", application = form_info)
+    job = load_job_from_db(id)
+    return render_template("application_submitted.html", application=form_info, job=job)
+
+
+@app.route("/job/<id>/apply/submitted")
+def application_submittion(id):
+    job = load_job_from_db(id)
+    return render_template(
+        "application_submitted_success.html",
+        job=job,
+    )
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ from models import db
 from sqlalchemy import create_engine, text
 
 engine = create_engine(os.environ["DB_ENVIRON"])
+application_data_engine = create_engine(os.environ["APPLICATION_DB"])
 jobs = []
 col = [
     "id",
@@ -32,3 +33,7 @@ def load_job_from_db(id):
             return None
         else:
             return career_jobs[0]
+
+
+def add_application_to_db():
+    pass
